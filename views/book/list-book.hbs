@@ -1,0 +1,11 @@
+<h2>Danh sách Book</h2>
+
+<ul class="people_list">
+    {{#each listBook}}
+        <li>{{this.name}}  -- {{this.price}} -- {{this.author}}
+            --- <a href="/book/edit/{{this._id}}">Sửa</a>
+            --- <a href="/book/delete/{{this._id}}">Xóa</a>
+        </li>
+    {{/each}}
+</ul>
+<a href="/book/add">Thêm mới</a>
